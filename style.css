@@ -9,16 +9,18 @@
 }
 
 main {
-  padding: 20px;
   margin: 50px 250px;
-  border: 2px solid black;
-  border-radius: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  box-shadow: 10px 10px 10px gray;
 }
 
 .container {
-  border-bottom: 2px solid;
+  border-bottom: 1px solid gray;
   padding-bottom: 30px;
   padding-top: 10px;
+  padding: 20px 70px;
 }
 
 .container div {
@@ -26,19 +28,30 @@ main {
 }
 
 .container .first,
-.container-two .first {
+.container-two .first,
+.container-third .first {
   display: inline-block;
+}
+.container .first div,
+.container .second h2 {
+  margin-bottom: 15px;
+}
+
+.container .first div h1 {
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .container .second,
-.container-two .second {
+.container-two .second,
+.container-third .second {
   float: right;
 }
 
 /* second container */
 .container-two {
-  padding-bottom: 20px 0px;
   margin-top: 20px;
+  padding: 20px 70px;
 }
 
 .container-two div {
@@ -69,6 +82,42 @@ tbody tr td {
   text-align: center;
 }
 
-tbody tr:last-child{
-    border-bottom: 1px solid;
+tbody tr:last-child {
+  border-bottom: 1px solid;
 }
+
+/* container third */
+.container-third {
+  padding-bottom: 20px 0px;
+  margin: 20px 50px;
+}
+
+.container-third div {
+  line-height: 30px;
+}
+
+.container-third .second p {
+  text-align: center;
+}
+
+.container-third .second p span {
+  margin-left: 20px;
+}
+
+/* container four */
+.container-four {
+  display: inline-block;
+  border-top: 1px solid gray;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  padding: 20px 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container-four p{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 19px;
+}
+
