@@ -115,9 +115,39 @@ tbody tr:last-child {
   margin-top: 30px;
 }
 
-.container-four p{
+.container-four p {
   display: inline-block;
   font-weight: bold;
   font-size: 19px;
 }
+
+/* media queries */
+@media screen and (max-width: 1050px) {
+  main {
+    margin: 20px;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container, .container-two, .container-third, .container-four{
+    text-align: center;
+  }
+
+  .container .first, .container-two .first, .container-third .first{
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .container .second, .container-two .second, .container-third .second{
+    float: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .table {
+    overflow-x:auto
+  }
+}
+
 
