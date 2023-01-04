@@ -55,12 +55,16 @@
         margin-top: 15px;
       }
 
-      .container div:last-child .second p {
-        margin-top: 10px;
+      .user{
+        margin-top: 20px;
       }
 
-      .container div:last-child .first p:last-child {
+      .user .first p:last-child {
         color: blue;
+      }
+
+      .container div:last-child{
+        margin-top: 10px;
       }
 
       .container .first,
@@ -79,6 +83,10 @@
       .container .second h2 {
         font-size: 40px;
         line-height: 1;
+      }
+
+      .container .second p {
+        text-align: end;
       }
 
       .container .first div h1 {
@@ -192,7 +200,7 @@
       }
 
       .content {
-        margin-top: 50px;
+        margin-top: 30px;
       }
     </style>
   </head>
@@ -213,9 +221,10 @@
 
             <div class="second">
               <h3>
-                Facture <br />
-                D'acompte
+                Facture
+                D'avoir
               </h3>
+              <p># RET-0223</p>
             </div>
           </div>
 
@@ -227,20 +236,27 @@
             </div>
 
             <div class="second">
-              <p>N° de l'acompte RET-0223</p>
-              <p class="sold">Solde dû</p>
-              <p>10.00 XAF</p>
+              <p>Restant des credit</p>
+              <p class="sold">10.00 XAF</p>
             </div>
           </div>
 
-          <div>
+          <div class="user">
             <div class="first">
               <p>Facturer a</p>
               <p>KENNETH</p>
             </div>
 
             <div class="second">
-              <p>Date de l'acompte : 02-01-2023</p>
+              <p>Date : 02-01-2023</p>
+              <p>N° de ref : aaa</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="first">
+              <p>Object</p>
+              <p>aaa</p>
             </div>
           </div>
         </div>
@@ -250,24 +266,30 @@
         <div class="table">
           <table>
             <thead>
-              <tr>
-                <th>#</th>
-                <th>Description</th>
-                <th>Montant</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Fruit</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Agrumes</td>
-                <td>50</td>
-              </tr>
-            </tbody>
+                <tr>
+                  <th>#</th>
+                  <th>Article &Description</th>
+                  <th>Quantité</th>
+                  <th>Taux</th>
+                  <th>Montant</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Fruit</td>
+                  <td>2</td>
+                  <td>1.00</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Agrumes</td>
+                  <td>2</td>
+                  <td>1.00</td>
+                  <td>50</td>
+                </tr>
+              </tbody>
           </table>
         </div>
         <!-- end table -->
@@ -289,12 +311,12 @@
               </tr>
 
               <tr>
-                <td class="text-right">Paiement Effectué</td>
+                <td class="text-right">C.A (5%)</td>
                 <td class="text-left">10 XAF</td>
               </tr>
 
               <tr class="bg-gray">
-                <td class="text-right"><b>Solde dû:</b></td>
+                <td class="text-right"><b> Restant des credits:</b></td>
                 <td class="text-left"><b>22 XAF</b></td>
               </tr>
             </table>
