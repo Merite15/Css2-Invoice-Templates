@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: "Hanken Grotesk", sans-serif;
+        list-style: none;
+      }
+
+      main {
+        margin: 50px 250px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding-bottom: 20px;
+        box-shadow: 10px 10px 10px gray;
+      }
+
+      .container {
+        padding-bottom: 30px;
+        padding-top: 10px;
+        padding: 20px 50px;
+      }
+
+      .container div {
+        line-height: 30px;
+      }
+
+      .container .infos {
+        margin: 15px 0px;
+      }
+
+      .container .infos .second {
+        text-align: end;
+      }
+
+      .container .infos .second .sold {
+        font-size: 14px;
+      }
+
+      .container .infos .second p:last-child {
+        font-weight: bold;
+      }
+
+      .container .second > h3 {
+        font-size: 30px;
+        margin-top: 15px;
+      }
+
+      .container div:last-child .second p {
+        margin-top: 10px;
+      }
+
+      .container div:last-child .first p:last-child {
+        color: blue;
+      }
+
+      .container .first,
+      .container-third .first {
+        display: inline-block;
+      }
+
+      .container .first h1 {
+        font-size: 19px;
+      }
+
+      .container .first p {
+        font-size: 15px;
+      }
+
+      .container .second h2 {
+        font-size: 40px;
+        line-height: 1;
+      }
+
+      .container .first div h1 {
+        display: inline-block;
+        margin-left: 10px;
+      }
+
+      .container .second,
+      .container-third .second {
+        float: right;
+      }
+
+      /* table */
+      .table {
+        padding: 20px 50px;
+      }
+
+      table {
+        border-collapse: collapse;
+        margin-top: 5px;
+        width: 100%;
+      }
+
+      table th {
+        color: black;
+        text-transform: uppercase;
+      }
+
+      table thead {
+        background-color: #3c3d3a;
+      }
+
+      table thead th {
+        color: white;
+        border-top: 1px solid black;
+        padding: 10px;
+        text-align: start;
+        font-size: 13px;
+      }
+
+      table thead th:last-child {
+        text-align: end;
+      }
+
+      tbody tr td {
+        border-top: 1px solid black;
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      tbody tr td:last-child {
+        text-align: end;
+      }
+
+      tbody tr:last-child {
+        border-bottom: 1px solid;
+      }
+
+      /* container third */
+      .container-third {
+        padding-bottom: 20px 0px;
+        margin: 20px 70px;
+        margin-top: 0px;
+      }
+
+      .container-third div {
+        line-height: 30px;
+      }
+
+      .container-third .second p {
+        text-align: center;
+      }
+
+      .container-third .second p span {
+        margin-left: 20px;
+      }
+
+      /* container four */
+      .container-four {
+        display: inline-block;
+        border-top: 1px solid gray;
+        width: 100%;
+        border-bottom: 1px solid gray;
+        padding: 20px 30px;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .container-four p {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 19px;
+      }
+
+      /* other table */
+      .text-right {
+        text-align: right !important;
+      }
+
+      .text-left {
+        text-align: left !important;
+      }
+
+      .bg-gray {
+        background: #eaeaea;
+      }
+
+      .border-none tr td {
+        border: none;
+        padding: 5px;
+      }
+
+      .content {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <div class="container">
+          <div>
+            <div class="first">
+              <div>
+                <img
+                  src="https://cdn.pixabay.com/photo/2017/02/18/19/20/logo-2078018_1280.png"
+                  width="100px"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="second">
+              <h3>
+                Facture <br />
+                D'acompte
+              </h3>
+            </div>
+          </div>
+
+          <div class="infos">
+            <div class="first">
+              <h1>GesFlow</h1>
+              <p>Brazzaville</p>
+              <p>Congo</p>
+            </div>
+
+            <div class="second">
+              <p>N° de l'acompte RET-0223</p>
+              <p class="sold">Solde dû</p>
+              <p>10.00 XAF</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="first">
+              <p>Facturer a</p>
+              <p>KENNETH</p>
+            </div>
+
+            <div class="second">
+              <p>Date de l'acompte : 02-01-2023</p>
+            </div>
+          </div>
+        </div>
+        <!-- end first container -->
+
+        <!-- table -->
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Description</th>
+                <th>Montant</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Fruit</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Agrumes</td>
+                <td>50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- end table -->
+
+        <!-- third container -->
+        <div class="container-third">
+          <div class="first"></div>
+
+          <div class="second">
+            <table class="border-none">
+              <tr>
+                <td class="text-right">Sous Total</td>
+                <td class="text-left">10 XAF</td>
+              </tr>
+
+              <tr>
+                <td class="text-right"><b>Total:</b></td>
+                <td class="text-left"><b>20 XAF</b></td>
+              </tr>
+
+              <tr>
+                <td class="text-right">Paiement Effectué</td>
+                <td class="text-left">10 XAF</td>
+              </tr>
+
+              <tr class="bg-gray">
+                <td class="text-right"><b>Solde dû:</b></td>
+                <td class="text-left"><b>22 XAF</b></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- end third container -->
+
+        <!-- start four container -->
+        <div class="container-four">
+          <p>Note:</p>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+            suscipit numquam quibusdam qui veritatis. Modi atque id vel
+            distinctio. Esse nihil obcaecati optio, est totam qui quas ratione
+            ab laboriosam..</span
+          >
+        </div>
+        <!-- end four container -->
+      </div>
+    </main>
+  </body>
+</html>
