@@ -16,8 +16,12 @@
         list-style: none;
       }
 
+      .content {
+        margin-top: 50px;
+      }
+
       main {
-        margin: 50px 300px;
+        margin: 50px 350px;
         border: 1px solid gray;
         border-radius: 5px;
         padding-bottom: 20px;
@@ -55,7 +59,7 @@
         margin-top: 15px;
       }
 
-      .user{
+      .user {
         margin-top: 20px;
       }
 
@@ -63,9 +67,24 @@
         color: blue;
       }
 
-      .container div:last-child{
-        margin-top: 10px;
+      .user .first{
+        margin-top: 25px;
       }
+
+      .user .second{
+        line-height: 3;
+        font-size: 14px;
+      }
+
+      .user .second div p:first-child{
+        display: inline-block;
+      }
+
+      .user .second div p:last-child{
+        float: right;
+        margin-left: 30px;
+      }
+
 
       .container .first,
       .container-third .first {
@@ -167,15 +186,12 @@
       /* container four */
       .container-four {
         display: inline-block;
-        border-top: 1px solid gray;
         width: 100%;
-        border-bottom: 1px solid gray;
-        padding: 20px 30px;
-        text-align: center;
-        margin-top: 30px;
+        margin: 20px 50px;
+        word-break: break-word;
       }
 
-      .container-four p {
+      .container-four p:first-child {
         display: inline-block;
         font-weight: bold;
         font-size: 19px;
@@ -198,10 +214,6 @@
         border: none;
         padding: 5px;
       }
-
-      .content {
-        margin-top: 30px;
-      }
     </style>
   </head>
   <body>
@@ -220,11 +232,8 @@
             </div>
 
             <div class="second">
-              <h3>
-                Facture
-                D'avoir
-              </h3>
-              <p># RET-0223</p>
+              <h3>Facture</h3>
+              <p># INV-0223</p>
             </div>
           </div>
 
@@ -236,7 +245,7 @@
             </div>
 
             <div class="second">
-              <p>Restant des credit</p>
+              <p>Solde du</p>
               <p class="sold">10.00 XAF</p>
             </div>
           </div>
@@ -248,15 +257,18 @@
             </div>
 
             <div class="second">
-              <p>Date : 02-01-2023</p>
-              <p>N° de ref : aaa</p>
-            </div>
-          </div>
-
-          <div>
-            <div class="first">
-              <p>Object</p>
-              <p>aaa</p>
+              <div>
+                <p>Date de l'échéance: </p>
+                <p>22-02-2012</p>
+              </div>
+              <div>
+                <p>Date de la facture: </p>
+                <p>22-02-2012</p>
+              </div>
+              <div>
+                <p>Conditions de paiement: </p>
+                <p>aaa</p>
+              </div>
             </div>
           </div>
         </div>
@@ -266,30 +278,30 @@
         <div class="table">
           <table>
             <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Article &Description</th>
-                  <th>Quantité</th>
-                  <th>Taux</th>
-                  <th>Montant</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Fruit</td>
-                  <td>2</td>
-                  <td>1.00</td>
-                  <td>20</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Agrumes</td>
-                  <td>2</td>
-                  <td>1.00</td>
-                  <td>50</td>
-                </tr>
-              </tbody>
+              <tr>
+                <th>#</th>
+                <th>Article &Description</th>
+                <th>Quantité</th>
+                <th>Taux</th>
+                <th>Montant</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Fruit</td>
+                <td>2</td>
+                <td>1.00</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Agrumes</td>
+                <td>2</td>
+                <td>1.00</td>
+                <td>50</td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <!-- end table -->
@@ -316,7 +328,7 @@
               </tr>
 
               <tr class="bg-gray">
-                <td class="text-right"><b> Restant des credits:</b></td>
+                <td class="text-right"><b> Solde du:</b></td>
                 <td class="text-left"><b>22 XAF</b></td>
               </tr>
             </table>
@@ -326,13 +338,11 @@
 
         <!-- start four container -->
         <div class="container-four">
-          <p>Note:</p>
-          <span>
+          <p>Remarques:</p>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
-            suscipit numquam quibusdam qui veritatis. Modi atque id vel
-            distinctio. Esse nihil obcaecati optio, est totam qui quas ratione
-            ab laboriosam..</span
-          >
+            suscipit
+          </p>
         </div>
         <!-- end four container -->
       </div>
