@@ -17,11 +17,7 @@
       }
 
       main {
-        margin: 50px 350px;
-        border: 1px solid gray;
         border-radius: 5px;
-        padding-bottom: 20px;
-        box-shadow: 10px 10px 10px gray;
       }
 
       .content {
@@ -30,7 +26,7 @@
 
       .container,
       .customer {
-        padding: 20px 50px;
+        padding: 20px;
       }
 
       .container > div {
@@ -40,7 +36,6 @@
 
       .container div > div {
         display: inline-block;
-        margin-left: 20px;
         vertical-align: top;
         margin-bottom: 20px;
       }
@@ -60,7 +55,7 @@
 
       /* received */
       .received {
-        padding: 20px 50px;
+        padding: 20px;
       }
 
       .received h3 {
@@ -79,11 +74,11 @@
         margin-top: 20px;
       }
 
-      .details div p:first-child {
+      .details div .first-child{
         display: inline-block;
       }
 
-      .details div p:last-child {
+      .details div .second-child {
         float: right;
         text-decoration: underline;
         margin-left: 60px;
@@ -102,11 +97,11 @@
         line-height: 2;
       }
 
-      .customer p:first-child {
+      .customer .first-child {
         font-size: 16px;
       }
 
-      .customer p:last-child {
+      .customer .second-child {
         color: #1991eb;
         text-transform: uppercase;
         font-weight: bold;
@@ -172,16 +167,18 @@
           <div>
             <div class="details">
               <div>
-                <p>Date du paiement</p>
-                <p>22-02-2012</p>
+                <p class="first-child">Date du paiement</p>
+                <p class="second-child">22-02-2012</p>
               </div>
+
               <div>
-                <p>Numero de reference</p>
-                <p>2200</p>
+                <p class="first-child">Numero de reference</p>
+                <p class="second-child">2200</p>
               </div>
+
               <div>
-                <p>Mode de paiement</p>
-                <p>Comptant</p>
+                <p class="first-child">Mode de paiement</p>
+                <p class="second-child">Comptant</p>
               </div>
             </div>
             <div class="amount">
@@ -193,8 +190,8 @@
         <!-- end table -->
 
         <div class="customer">
-          <p>Facturer à</p>
-          <p>Danny</p>
+          <p class="first-child">Facturer à</p>
+          <p class="second-child">Danny</p>
         </div>
 
         <div class="payment_invoice">
