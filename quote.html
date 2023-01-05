@@ -17,21 +17,12 @@
       }
 
       .content{
-        margin: 50px 0px;
-      }
-
-      main {
-        margin: 50px 350px;
-        border: 1px solid gray;
-        border-radius: 5px;
-        padding-bottom: 20px;
-        box-shadow: 10px 10px 10px gray;
+        margin: 30px;
       }
 
       .container {
         padding-bottom: 30px;
         padding-top: 10px;
-        padding: 20px 50px;
       }
 
       .container div {
@@ -50,20 +41,18 @@
         font-size: 14px;
       }
 
-      .container .infos .second p:last-child {
-        font-weight: bold;
-      }
+
 
       .container .second > h3 {
         font-size: 30px;
         margin-top: 15px;
       }
 
-      .container div:last-child .second p {
+      .container .last-child .second p {
         margin-top: 10px;
       }
 
-      .container div:last-child .first p:last-child {
+      .text-blue {
         color: blue;
       }
 
@@ -96,9 +85,6 @@
       }
 
       /* table */
-      .table {
-        padding: 20px 50px;
-      }
 
       table {
         border-collapse: collapse;
@@ -123,9 +109,7 @@
         text-align: start;
       }
 
-      table thead th:last-child {
-        text-align: end;
-      }
+
 
       tbody tr td {
         border-top: 1px solid black;
@@ -133,18 +117,18 @@
         font-size: 14px;
       }
 
-      tbody tr td:last-child {
+      .text-end{
         text-align: end;
       }
 
-      tbody tr:last-child {
+
+      tbody .last-child {
         border-bottom: 1px solid;
       }
 
       /* container third */
       .container-third {
         padding-bottom: 20px 0px;
-        margin: 20px 50px;
         margin-top: 0px;
       }
 
@@ -164,11 +148,10 @@
       .container-four {
         display: inline-block;
         width: 100%;
-        margin: 20px 50px;
         word-break: break-word;
       }
 
-      .container-four p:first-child {
+      .container-four .first-child {
         display: inline-block;
         font-weight: bold;
         font-size: 19px;
@@ -222,10 +205,10 @@
             </div>
           </div>
 
-          <div>
+          <div class="last-child">
             <div class="first">
               <p>Facturer a</p>
-              <p>KENNETH</p>
+              <p class="text-blue">KENNETH</p>
             </div>
 
             <div class="second">
@@ -244,7 +227,7 @@
                 <th>Article &Description</th>
                 <th>Quantité</th>
                 <th>Taux</th>
-                <th>Montant</th>
+                <th class="text-end">Montant</th>
               </tr>
             </thead>
             <tbody>
@@ -253,14 +236,14 @@
                 <td>Fruit</td>
                 <td>2</td>
                 <td>1.00</td>
-                <td>20</td>
+                <td class="text-end">20</td>
               </tr>
-              <tr>
+              <tr class="last-child">
                 <td>2</td>
                 <td>Agrumes</td>
                 <td>2</td>
                 <td>1.00</td>
-                <td>50</td>
+                <td class="text-end">50</td>
               </tr>
             </tbody>
           </table>
@@ -289,7 +272,7 @@
 
         <!-- start four container -->
         <div class="container-four">
-          <p>Remarques:</p>
+          <p class="first-child">Remarques:</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
             suscipit
@@ -300,4 +283,3 @@
     </main>
   </body>
 </html>
-v

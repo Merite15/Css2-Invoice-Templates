@@ -16,14 +16,6 @@
         list-style: none;
       }
 
-      main {
-        margin: 50px 350px;
-        border: 1px solid gray;
-        border-radius: 5px;
-        padding-bottom: 20px;
-        box-shadow: 10px 10px 10px gray;
-      }
-
       .content {
         margin-top: 50px;
       }
@@ -31,7 +23,7 @@
       .container {
         padding-bottom: 30px;
         padding-top: 10px;
-        padding: 20px 50px;
+        padding: 20px;
       }
 
       .container div {
@@ -50,7 +42,7 @@
         font-size: 14px;
       }
 
-      .container .infos .second p:last-child {
+      .bold{
         font-weight: bold;
       }
 
@@ -59,11 +51,11 @@
         margin-top: 15px;
       }
 
-      .container div:last-child .second p {
+      .date {
         margin-top: 10px;
       }
 
-      .container div:last-child .first p:last-child {
+      .text-blue {
         color: blue;
       }
 
@@ -97,7 +89,7 @@
 
       /* table */
       .table {
-        padding: 20px 50px;
+        padding: 20px;
       }
 
       table {
@@ -123,28 +115,24 @@
         font-size: 13px;
       }
 
-      table thead th:last-child {
-        text-align: end;
-      }
-
       tbody tr td {
         border-top: 1px solid black;
         padding: 10px;
         font-size: 14px;
       }
 
-      tbody tr td:last-child {
+      .text-end {
         text-align: end;
       }
 
-      tbody tr:last-child {
+      tbody .last-child {
         border-bottom: 1px solid;
       }
 
       /* container third */
       .container-third {
-        padding-bottom: 20px 0px;
-        margin: 20px 70px;
+        padding-bottom: 20px;
+        margin: 0px 20px;
         margin-top: 0px;
       }
 
@@ -230,18 +218,18 @@
             <div class="second">
               <p>N° de l'acompte RET-0223</p>
               <p class="sold">Solde dû</p>
-              <p>10.00 XAF</p>
+              <p class="bold">10.00 XAF</p>
             </div>
           </div>
 
           <div>
             <div class="first">
               <p>Facturer a</p>
-              <p>KENNETH</p>
+              <p class="text-blue">KENNETH</p>
             </div>
 
             <div class="second">
-              <p>Date de l'acompte : 02-01-2023</p>
+              <p class="date">Date de l'acompte : 02-01-2023</p>
             </div>
           </div>
         </div>
@@ -254,19 +242,20 @@
               <tr>
                 <th>#</th>
                 <th>Description</th>
-                <th>Montant</th>
+                <th class="text-end">Montant</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>1</td>
                 <td>Fruit</td>
-                <td>20</td>
+                <td class="text-end">20</td>
               </tr>
-              <tr>
+
+              <tr class="last-child">
                 <td>2</td>
                 <td>Agrumes</td>
-                <td>50</td>
+                <td class="text-end">50</td>
               </tr>
             </tbody>
           </table>

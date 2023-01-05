@@ -17,15 +17,7 @@
       }
 
       .content {
-        margin-top: 50px;
-      }
-
-      main {
-        margin: 50px 350px;
-        border: 1px solid gray;
-        border-radius: 5px;
-        padding-bottom: 20px;
-        box-shadow: 10px 10px 10px gray;
+        margin-top: 30px;
       }
 
       .container {
@@ -50,7 +42,7 @@
         font-size: 14px;
       }
 
-      .container .infos .second p:last-child {
+      .sold {
         font-weight: bold;
       }
 
@@ -63,7 +55,7 @@
         margin-top: 20px;
       }
 
-      .user .first p:last-child {
+      .color-blue{
         color: blue;
       }
 
@@ -76,11 +68,11 @@
         font-size: 14px;
       }
 
-      .user .second div p:first-child{
+      .user .second div .first-child{
         display: inline-block;
       }
 
-      .user .second div p:last-child{
+      .user .second div .second-child{
         float: right;
         margin-left: 30px;
       }
@@ -146,21 +138,17 @@
         font-size: 13px;
       }
 
-      table thead th:last-child {
-        text-align: end;
-      }
-
       tbody tr td {
         border-top: 1px solid black;
         padding: 10px;
         font-size: 14px;
       }
 
-      tbody tr td:last-child {
+      .text-end{
         text-align: end;
       }
 
-      tbody tr:last-child {
+      tbody .last-child {
         border-bottom: 1px solid;
       }
 
@@ -191,7 +179,7 @@
         word-break: break-word;
       }
 
-      .container-four p:first-child {
+      .container-four .first-child {
         display: inline-block;
         font-weight: bold;
         font-size: 19px;
@@ -253,21 +241,23 @@
           <div class="user">
             <div class="first">
               <p>Facturer a</p>
-              <p>KENNETH</p>
+              <p class="color-blue">KENNETH</p>
             </div>
 
             <div class="second">
               <div>
-                <p>Date de l'échéance: </p>
-                <p>22-02-2012</p>
+                <p class="first-child">Date de l'échéance: </p>
+                <p class="second-child">22-02-2012</p>
               </div>
+
               <div>
-                <p>Date de la facture: </p>
-                <p>22-02-2012</p>
+                <p class="first-child">Date de la facture: </p>
+                <p class="second-child">22-02-2012</p>
               </div>
+
               <div>
-                <p>Conditions de paiement: </p>
-                <p>aaa</p>
+                <p class="first-child">Conditions de paiement: </p>
+                <p class="second-child">aaa</p>
               </div>
             </div>
           </div>
@@ -283,7 +273,7 @@
                 <th>Article &Description</th>
                 <th>Quantité</th>
                 <th>Taux</th>
-                <th>Montant</th>
+                <th class="text-end">Montant</th>
               </tr>
             </thead>
             <tbody>
@@ -292,14 +282,15 @@
                 <td>Fruit</td>
                 <td>2</td>
                 <td>1.00</td>
-                <td>20</td>
+                <td class="text-end">20</td>
               </tr>
-              <tr>
+
+              <tr class="last-child">
                 <td>2</td>
                 <td>Agrumes</td>
                 <td>2</td>
                 <td>1.00</td>
-                <td>50</td>
+                <td class="text-end">50</td>
               </tr>
             </tbody>
           </table>
@@ -338,7 +329,7 @@
 
         <!-- start four container -->
         <div class="container-four">
-          <p>Remarques:</p>
+          <p class="first-child">Remarques:</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
             suscipit
