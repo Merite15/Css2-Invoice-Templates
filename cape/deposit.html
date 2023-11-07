@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facture d'acompte</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: "Hanken Grotesk", sans-serif;
+            list-style: none;
+        }
+
+        .content {
+            margin: 50px;
+        }
+
+        .container {
+            padding-bottom: 30px;
+            padding-top: 10px;
+            padding: 20px;
+        }
+
+        .container div {
+            line-height: 30px;
+        }
+
+        .invoice {
+            margin-top: 20px;
+        }
+
+        .container .infos {
+            margin: 30px 0px;
+        }
+
+        .container .infos .first, .container .infos .second {
+            line-height: 35px;
+        }
+
+        .container .infos .second {
+            margin-right: 45px;
+        }
+
+        .container .infos .second .sold {
+            font-size: 14px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .container .second > h3 {
+            font-size: 30px;
+            margin-top: 15px;
+        }
+
+        .date {
+            margin-top: 10px;
+        }
+
+        .text-blue {
+            color: blue;
+        }
+
+        .container .first,
+        .container-third .first {
+            display: inline-block;
+        }
+
+        .container .first h1 {
+            font-size: 19px;
+        }
+
+        .container .first p {
+            font-size: 15px;
+        }
+
+        .container .second h2 {
+            font-size: 40px;
+            line-height: 1;
+        }
+
+        .container .first div h1 {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .container .second,
+        .container-third .second {
+            float: right;
+        }
+
+        /* table */
+        .table {
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 5px;
+            width: 100%;
+        }
+
+        table th {
+            color: black;
+            text-transform: uppercase;
+        }
+
+        table thead {
+            background-color: #3c3d3a;
+        }
+
+        table thead th {
+            color: white;
+            border-top: 1px solid black;
+            padding: 10px;
+            text-align: start;
+            font-size: 13px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid lightgray;
+        }
+
+        tbody tr td {
+            border-top: 1px solid black;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .text-end {
+            text-align: end;
+        }
+
+        /* container third */
+        .container-third {
+            padding-bottom: 20px;
+            margin: 0px 20px;
+            margin-top: 0px;
+        }
+
+        .container-third div {
+            line-height: 30px;
+        }
+
+        .container-third .second p {
+            text-align: center;
+        }
+
+        .container-third .second p span {
+            margin-left: 20px;
+        }
+
+
+        /* other table */
+        .text-right {
+            text-align: right !important;
+        }
+
+        .text-left {
+            text-align: left !important;
+        }
+
+        .bg-gray {
+            background: #eaeaea;
+        }
+
+        .border-none tr td {
+            border: none;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="content">
+            <div class="container">
+                <div>
+                    <div class="first">
+                        <div>
+                            <img src="https://cdn.pixabay.com/photo/2017/02/18/19/20/logo-2078018_1280.png"
+                                width="100px" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="second">
+                        <h3>
+                            Retrait d'espèce
+                        </h3>
+
+                        <div class="invoice">
+                            <p>Facture n° : 00001</p>
+                            <p>Date : 12/02/2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infos">
+                    <div class="first">
+                        <h1>De <br> CAPE</h1>
+                        <p>Brazzaville</p>
+                        <p>22 rue de la vie, La mort</p>
+                        <p>cape@gmail.com</p>
+                        <p>898789879897</p>
+                    </div>
+
+                    <div class="second">
+                        <h1>A <br> Mr Eric</h1>
+                        <p>Pointe noire</p>
+                        <p>22 rue de la vie, La mort</p>
+                        <p>eric@gmail.com</p>
+                        <p>87787878</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end first container -->
+
+            <!-- table -->
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th class="text-end">Montant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Retrait d'espèce</td>
+                            <td class="text-end">2000 XAF</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end table -->
+
+            <!-- third container -->
+            <div class="container-third">
+                <div class="first"></div>
+
+                <div class="second">
+                    <table class="border-none">
+                        <tr>
+                            <td class="text-right">Solde avant : </td>
+                            <td class="text-left">10000 XAF</td>
+                        </tr>
+
+                        <tr class="bg-gray">
+                            <td class="text-right"><b>Solde actuel:</b></td>
+                            <td class="text-left"><b>8000 XAF</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- end third container -->
+        </div>
+    </main>
+</body>
+
+</html>
