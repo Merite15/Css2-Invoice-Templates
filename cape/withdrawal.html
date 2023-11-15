@@ -1,147 +1,160 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WithDrawal Model</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-        * {
-            padding: 0px;
-            margin: 0px;
-            box-sizing: border-box;
-            font-family: "Hanken Grotesk", sans-serif;
-            list-style: none;
+        /* Styles pour la classe .p-4 */
+        .p-4 {
+            padding: 1rem;
         }
 
-        h1 {
-            font-size: 19px;
-        }
-
-        .content {
-            margin: 50px;
-        }
-
-        .container {
-            padding-bottom: 30px;
-            padding-top: 10px;
-            padding: 20px;
-        }
-
-
-        .invoice {
-            margin-top: 20px;
-        }
-
-        .container .infos {
-            margin: 30px 0px;
-        }
-
-        .container .infos .first, .container .infos .second {
-            line-height: 35px;
-        }
-
-        .container .infos .second {
-            margin-right: 45px;
-        }
-
-        .container .infos .second .sold {
-            font-size: 14px;
-        }
-
-        .bold {
-            font-weight: bold;
-        }
-
-        .container .second > h3 {
-            font-size: 30px;
-            margin-top: 15px;
-        }
-
-        .date {
-            margin-top: 10px;
-        }
-
-        .text-blue {
-            color: blue;
-        }
-
-        .container .first,
-        .container-third .first {
+        /* Styles pour la classe .inline-block */
+        .inline-block {
             display: inline-block;
         }
 
-        .container .first h1 {
-            font-size: 19px;
-        }
-
-        .container .first p {
-            font-size: 15px;
-        }
-
-        .container .second h2 {
-            font-size: 40px;
-            line-height: 1;
-        }
-
-        .container .first div h1 {
-            display: inline-block;
-            margin-left: 10px;
-        }
-
-        .container .second {
+        /* Styles pour la classe .float-right */
+        .float-right {
             float: right;
         }
 
-        .text-end {
-            text-align: end;
+        /* Styles pour la classe .text-center */
+        .text-center {
+            text-align: center;
+        }
+
+        /* Styles pour la classe .mt-10 */
+        .mt-10 {
+            margin-top: 2.5rem;
+        }
+
+        /* Styles pour la classe .text-2xl */
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+
+        /* Styles pour la classe .font-semibold */
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        /* Styles pour la classe .pb-2 */
+        .pb-2 {
+            padding-bottom: 0.5rem;
+        }
+
+        /* Styles pour la classe .mt-8 */
+        .mt-8 {
+            margin-top: 2rem;
+        }
+
+        /* Styles pour la classe .text-xl */
+        .text-xl {
+            font-size: 1.25rem;
+        }
+
+        /* Styles pour la classe .border-b-2 */
+        .border-b-2 {
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+        }
+
+        /* Styles pour la classe .py-2 */
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Styles pour la classe .text-lg */
+        .text-lg {
+            font-size: 1.125rem;
+        }
+
+        /* Styles pour la classe .border-t-2 */
+        .border-t-2 {
+            border-top-width: 2px;
+            border-top-style: solid;
+        }
+
+        /* Styles pour la classe .mb-2 */
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Styles pour la classe .my-8 */
+        .my-8 {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
         }
     </style>
 </head>
 
 <body>
-    <main>
-        <div class="content">
-            <div class="container">
-                <div>
-                    <div class="first">
-                        <div>
-                            <img src="https://cdn.pixabay.com/photo/2017/02/18/19/20/logo-2078018_1280.png"
-                                width="100px" alt="" />
-                        </div>
-                    </div>
+    <div class="p-4">
+        <div>
+            <div class="inline-block">CAPE</div>
+            <div class="float-right">Facture N° : 20000</div>
+        </div>
 
-                    <div class="second">
-                        <h3>
-                            Retrait d'espèce
-                        </h3>
-                    </div>
+        <div class=" text-center mt-10">
+            <div class="text-2xl font-semibold pb-2 "> Retrait en espèce</div>
+        </div>
+
+        <div class="mt-8">
+            <h2 class="text-xl border-b-2 border-gray-600 pb-2"> Details du client </h2>
+            <table class="w-full mt-2">
+                <thead>
+                    <tr>
+                        <td class="py-2"> Nom </td>
+                        <td class="text-center"> Telephone </td>
+                        <td class="text-right"> N°de compte </td>
+                    </tr>
+                </thead>
+                <tbody class="text-lg">
+                    <tr>
+                        <td> Morgan Louis </td>
+                        <td class="text-center"> 14-24-52 </td>
+                        <td class="text-right"> 28103120 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-8">
+            <h2 class="text-xl  border-b-2 border-gray-600 pb-2"> Details de l'operation </h2>
+            <div>
+                <div class="inline-block">
+                    <div class="font-light tracking-wider py-2"> Date et heure</div>
+                    <div> 23 Jan 2016 at 16:21 </div>
                 </div>
-
-                <div class="infos">
-                    <div class="first">
-                        <h1>Client :  CAPE</h1>
-                        <p>Adresse : 22 rue de la vie, La mort</p>
-                        <p>Telephone : 898789879897</p>
-                        <p>N° Piece d'identité : 2567889</p>
-                    </div>
-
-                    <div class="second">
-                        <h1>Agent : Mr Eric</h1>
-                        <p>Date : 22/04/2023</p>
-                        <p>Type d'operation : Versement</p>
-                        <p>Montant : 1000</p>
-                        <p>Solde avant : 20000 XAF</p>
-                        <p>Solde actuel : 21000 XAF</p>
-                    </div>
+                <div class="text-right float-right">
+                    <div class="font-light tracking-wider py-2"> Reference </div>
+                    <div> Birthday Gift </div>
                 </div>
             </div>
-            <!-- end first container -->
+            <hr class="border-t-2 border-gray-600 mt-6 mb-2 my-8">
+            <table class="w-full mt-2">
+                <thead>
+                    <tr>
+                        <td class="py-2"> Solde Avant </td>
+                        <td class="text-center"> Montant retiré </td>
+                        <td class="text-right"> Solde actuel </td>
+                    </tr>
+                </thead>
+                <tbody class="text-lg">
+                    <tr>
+                        <td> 20000 </td>
+                        <td class="text-center"> 5000 XAF </td>
+                        <td class="text-right"> 15000 XAF </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </main>
+    </div>
 </body>
 
 </html>
