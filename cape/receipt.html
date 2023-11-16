@@ -39,11 +39,13 @@
             margin-top: 20px;
         }
 
-        .container , .container-second{
+        .container,
+        .container-second {
             padding: 20px;
         }
 
-        .container .infos, .container-second .bank-infos {
+        .container .infos,
+        .container-second .bank-infos {
             margin: 15px 0px;
             line-height: 30px;
         }
@@ -121,11 +123,24 @@
             text-align: center;
         }
 
-        .container-second .bank-infos .first {
+        .container-second .bank-infos .first .sold {
             border: 1px solid;
             padding: 10px;
             width: 400px;
             margin-top: 50px;
+        }
+
+        .container-second .bank-infos .first .signature {
+        margin-right: 70px;
+        margin-top: 5px;
+        }
+
+        .container-second .bank-infos .first .signature .cashier {
+            display: inline-block;
+        }
+
+        .container-second .bank-infos .first .signature .member {
+            float: right;
         }
 
         /* table */
@@ -172,7 +187,7 @@
         .margin-md {
             margin-left: 90px;
         }
-        
+
         .amount {
             margin-top: 70px;
         }
@@ -208,10 +223,10 @@
             <div class="container">
                 <div class="user-infos">
                     <div class="first">
-                        <p>Membre  <span class="bold margin-xl">Mr Temsis</span></p>
-                        <p>Ancien solde  <span class="bold margin-lg">14 XAF</span></p>
-                        <p>Montant espèces déposé  <span class="bold margin-md">14 XAF</span></p>
-                        <p class="amount">Montant total opération  <span class="bold margin-md">40 XAF</span></p>
+                        <p>Membre <span class="bold margin-xl">Mr Temsis</span></p>
+                        <p>Ancien solde <span class="bold margin-lg">14 XAF</span></p>
+                        <p>Montant espèces déposé <span class="bold margin-md">14 XAF</span></p>
+                        <p class="amount">Montant total opération <span class="bold margin-md">40 XAF</span></p>
                     </div>
 
                     <div class="second">
@@ -263,7 +278,11 @@
             <div class="container-second">
                 <div class="bank-infos">
                     <div class="first">
-                        <p>Nouveau solde : 50 XAF</p>
+                        <p class="sold">Nouveau solde : 50 XAF</p>
+                        <div class="signature">
+                            <p class="cashier">Le caissier </p>
+                            <p class="member">le membre</p>
+                        </div>
                     </div>
 
                     <div class="second">
