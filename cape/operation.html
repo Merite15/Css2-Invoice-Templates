@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receipt</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: "Hanken Grotesk", sans-serif;
+            list-style: none;
+        }
+
+        .text-center {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .mt-10 {
+            margin-top: 3rem;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        .content {
+            /* margin-top: 20px; */
+            margin: 20px;
+            border: 4px double black;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .container .infos {
+            margin: 15px 0px;
+            line-height: 30px;
+        }
+
+        .container .infos .second {
+            text-align: end;
+        }
+
+        .container .infos .second .sold {
+            font-size: 14px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .container .second>h3 {
+            font-size: 30px;
+            margin-top: 15px;
+        }
+
+        .user {
+            margin-top: 20px;
+        }
+
+        .text-blue {
+            color: blue;
+        }
+
+        .object {
+            margin-top: 10px;
+        }
+
+        .container .first {
+            display: inline-block;
+        }
+
+        .container .second {
+            float: right;
+        }
+
+        .container .first h1 {
+            font-size: 19px;
+        }
+
+        .container .first p {
+            font-size: 15px;
+        }
+
+        .container .second h2 {
+            font-size: 40px;
+            line-height: 1;
+        }
+
+        .container .second p {
+            text-align: end;
+        }
+
+        .container .first div h1 {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .container .user-infos {
+            line-height: 40px;
+        }
+
+        .text-end {
+            text-align: end;
+        }
+
+        tbody .last-child {
+            border-bottom: 1px solid;
+        }
+
+        .margin-xl {
+            margin-left: 200px;
+        }
+
+        .margin-lg {
+            margin-left: 170px;
+        }
+
+        .margin-md {
+            margin-left: 90px;
+        }
+
+        .amount {
+            margin-top: 70px;
+        }
+
+        .margin-right {
+            margin-right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="content">
+            <div class="container">
+                <div class="infos">
+                    <div class="first">
+                        <h1 class="bold">CAPE</h1>
+                        <p class="bold">Caisse Principale</p>
+                    </div>
+
+                    <div class="second">
+                        <p>Date journal : <span class="bold margin-md">14/12/2022</span></p>
+                        <p>Édité le : <span class="bold margin-md">14/12/2022</span></p>
+                        <p>Utilisateur : <span class="bold margin-md">Test User</span></p>
+                    </div>
+                </div>
+
+                <div class=" text-center mt-10">
+                    <h1 class="text-2xl font-semibold pb-2 "> Retrait en espèce</h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="user-infos">
+                    <div class="first">
+                        <p>COMPTE N° <span class="bold margin-xl">Mr Eric</span></p>
+                        <p>TITULAIRE <span class="bold margin-xl">Mr Eric</span></p>
+                        <!-- <p>Montant disponible<span class="bold margin-lg">14 XAF</span></p> -->
+                        <p>MONTANT<span class="bold margin-lg">14 XAF</span></p>
+                        <p>SOLDE AVANT <span class="bold margin-lg">14 XAF</span></p>
+                        <p>SOLDE ACTUEL  <span class="bold margin-lg">14 XAF</span></p>
+                    </div>
+
+                    <div class="second">
+                        <p>PIECE : <span class="bold margin-xl">CNI</span></p>
+                        <p>N° PIECE : <span class="bold margin-xl">45465</span></p>
+                        <p>N° OPERATION: <span class="bold margin-lg">00361</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="user-infos">
+                    <div class="first">
+                        <p>TITULAIRE</p>
+                    </div>
+
+                    <div class="second">
+                        <p>CAISSIER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
